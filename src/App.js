@@ -4,11 +4,10 @@ import React from 'react';
 
 
 class App extends React.Component {
-
-  axios 
-    .get(`https://preview.contentful.com/spaces/6did8bhz0z37/environments/master/entries?access_token=kGj7JMivsAvCApuLy8ILXUYSq0pjNUmorIhF1-FztxA`)
-    .then((response) => {console.log(response.data)})
-    .catch((err) => console.log(err));
+  axios
+  .get(`https://preview.contentful.com/spaces/6did8bhz0z37/environments/master/entries?access_token=kGj7JMivsAvCApuLy8ILXUYSq0pjNUmorIhF1-FztxA`)
+  .then((response) => {console.log(response.data)})
+  .catch((err) => console.log(err));
 
   render () {
     return (
